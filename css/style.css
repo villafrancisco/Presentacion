@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+:root {
+  --background: #282a36;
+  --background-header: #21222c;
+  --text-color: #ebe8e8;
+  --text-color-1: #68d1e8;
+  --text-color-2: #f0608b;
+  --text-color-3: #9a78cf;
+  --text-color-4: #f1fa8c;
+  --text-color-5: #50fa7b;
+  --text-color-6: #3b4a59; }
+
+body {
+  background-color: var(--background);
+  color: #f8e3c5;
+  font-family: Consolas, monaco, monospace; }
+
+img {
+  max-width: 100%; }
+
+.header {
+  background-color: var(--background-header);
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #16181e; }
+  .header #logo {
+    width: 20%;
+    max-width: 150px; }
+  .header #titulo {
+    text-align: center;
+    width: 70%; }
+  .header #enlaces a {
+    color: var(--text-color-3); }
+  .header h1 {
+    color: var(--text-color-2); }
+  .header span {
+    color: var(--text-color); }
+
+@media screen and (min-width: 1024px) {
+  .header {
+    font-size: 22px;
+    height: 120px; } }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main__item-description h2 {
+    text-align: center;
+    color: var(--text-color-2); }
+    .main__item-description h2 span {
+      color: var(--text-color); }
+  .main__item-description p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: left;
+    color: var(--text-color-4);
+    font-weight: 200; }
+    .main__item-description p a {
+      color: var(--text-color-3); }
+    .main__item-description p span.color-1 {
+      color: var(--text-color-1); }
+    .main__item-description p span.color-2 {
+      color: var(--text-color-2);
+      font-weight: 600; }
+    .main__item-description p span.color-5 {
+      color: var(--text-color-5); }
+  .main__item-img {
+    width: 25%; }
+
+@media screen and (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px; }
+    .main__item-description {
+      width: 60%; }
+      .main__item-description h2 {
+        text-align: left; }
+    .main__item-img {
+      width: 20%; } }
+
+footer {
+  text-align: center;
+  color: var(--text-color-6);
+  background-color: var(--background-header);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #16181e; }
