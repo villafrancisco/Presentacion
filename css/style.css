@@ -32,7 +32,17 @@ img {
     max-width: 150px; }
   .header #titulo {
     text-align: center;
-    width: 70%; }
+    width: 70%;
+    /*Animation*/ }
+  .header #titulo h1 {
+    position: relative; }
+  .header #titulo h1::before {
+    content: attr(data);
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    color: white;
+    visibility: visible; }
   .header #enlaces a {
     color: var(--text-color-3); }
   .header h1 {
